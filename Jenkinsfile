@@ -6,7 +6,7 @@ pipeline{
                 echo 'This is Srikanth !!!'
                        }
                   }
-                  stage (second for input){
+                  stage (compile){
                        steps{
                             input ('Do you want to proceed ?')
                             }
