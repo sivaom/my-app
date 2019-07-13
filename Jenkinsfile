@@ -1,14 +1,14 @@
 pipeline{
     agent any
          stages{
-             stage (initial stage){
+             stage (initial){
                   steps{
-                echo "This is Srikanth !!!"
+                echo 'This is Srikanth !!!'
                        }
                   }
-                  stage (second stage for input){
+                  stage (second for input){
                        steps{
-                            input ("Do you want to proceed ?")
+                            input ('Do you want to proceed ?')
                             }
                        }
          }
