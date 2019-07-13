@@ -1,12 +1,12 @@
 pipeline{
     agent any
          stages{
-             stage (initial){
+             stage (initial) {
                   steps{
                 echo 'This is Srikanth !!!'
                        }
                   }
-                  stage (compile){
+                  stage (compile) {
                        steps{
                             input ('Do you want to proceed ?')
                             }
