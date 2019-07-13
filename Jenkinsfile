@@ -11,7 +11,7 @@ pipeline{
                             input ('Do you want to proceed ?')
                             }
                        }
-             stage (final) {
+             stage (third) {
                  when {
                      not {
                            branch 'master'
