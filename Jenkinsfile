@@ -12,10 +12,8 @@ pipeline{
                             }
                        }
              stage (third) {
-                 when {
-                     not {
-                           branch 'master'
-                         }
+                when {
+                    expression { params.Branch == "master" }
                       }
                        steps{
                             echo "Hello Finally !!!"
